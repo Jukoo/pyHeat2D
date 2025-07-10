@@ -1,5 +1,8 @@
 import numpy as np
-from pyHeat2D.domain import Domain
+import domain 
+help(domain)
+
+from domain import Domain
 
 class BoundaryConditions:
     def __init__(self, nx:int, ny:int, domain:Domain, g=None, TBC=None):
@@ -40,7 +43,7 @@ class BoundaryConditions:
                     Tuple[np.ndarray, np.ndarray]: Dirichlet and Neumann boundary matrices.
         """
         if side not in ["west", "east", "south", "north"]:
-            print(" the side value is in" ["west", "east", "south", "north"])
+            print(" the side value is in", ["west", "east", "south", "north"])
 
         if side == "west":
             indices_dirichlet_side = domain.dict_dirichlet_indices[side]
