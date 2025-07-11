@@ -10,7 +10,7 @@ dirent_structure :dict[str:str]  = {
         "package_source_dir": "src/"
         }
 
-pyheat2d_srcs =  glb.glob(f"{dirent_structure.__getitem__('package_source_dir')}*.py") 
+pyheat2d_srcs =  glb.glob(f"{dirent_structure.__getitem__('package_source_dir')}*.pyx") 
 
 extensions_build = cythonize([
     Extension(
@@ -25,7 +25,7 @@ extensions_build = cythonize([
 
 
 setup(
-        name="Pyheat2D",   # Package name 
+        name="pyHeat2D",   # Package name 
         version="0.0.1a",  # current_version
         ext_modules=extensions_build,
         author="Elhadj Mama Gaye",
@@ -33,7 +33,5 @@ setup(
         maintainer_email="jUmarB@protonmail.com",
         
 
-
-
-        platforms=["GNU/linux" ,"MacOSX"]
+        platforms=["GNU/linux" ,"MacOSX","MS Window"]
         )

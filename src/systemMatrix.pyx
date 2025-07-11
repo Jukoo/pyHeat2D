@@ -3,6 +3,13 @@ import numpy as np
 from scipy.sparse.linalg import spsolve # solving a sparse matrix
 from scipy import sparse
 
+from libc.stdio  cimport puts 
+
+cpdef printlike():
+    puts("this is a test") 
+
+
+
 class SystemMatrix:
     def __init__(self):
         """
