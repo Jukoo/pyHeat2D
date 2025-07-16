@@ -1,6 +1,5 @@
 import numpy as np
 import domain 
-help(domain)
 
 from domain import Domain
 

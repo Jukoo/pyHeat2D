@@ -5,7 +5,7 @@
 
 For Quick Setup  is recommended  to use a virtual  environment to play with  
 
-Here  is the Guidence : 
+Following Step: 
 
 1 > Create the virtual env 
 ```bash 
@@ -21,6 +21,22 @@ $ source dist/bin/activate
 
 ```bash 
 $ python3  -m pip install -r requirement.txt
+```
+
+
+## BUILDING  MODULE  
+
+We provide an Makefile  that help  to build cleanly
+the base modules. 
+You can take a look
+just launch 
+```bash  
+$ make  && make init  
+```
+
+For cleaning or restoring back to default 
+```bash 
+$ make mproper   
 ```
 
 
