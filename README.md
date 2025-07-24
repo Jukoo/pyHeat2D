@@ -39,4 +39,9 @@ For cleaning or restoring back to default
 $ make mproper   
 ```
 
+At the end it 'll generate  a package module named 'PyH2D' 
+
+you  can import  the module object like a usual
+
+For more  info plus consult  the PyH2D API Doc
 

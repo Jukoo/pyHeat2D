@@ -3,7 +3,7 @@
 
 
 #+The Generated  shared object files are placed in $(PYH2D_pkg) directory   
-PYH2D_pkg:=PyH2D  # Name of the package  
+PYH2D_pkg:=pyh2d  # Name of the package  
 
 CYFLAGS= --inplace  --build-lib=$(PYH2D_pkg)  
 SRC=$(wildcard  src/*.pyx) 
@@ -14,7 +14,6 @@ PYH2D_pkg_so_modules=$(wildcard PyH2D/*.so)
 all:  build  clean init  
 	$(info [PyH2D]  Autobuild Done)
 	$(shell sleep 1) 
-	init 
 
 build:  setup.py  $(SRC)
 	$(info  Building sources ... )

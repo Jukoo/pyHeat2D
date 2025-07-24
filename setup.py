@@ -25,7 +25,7 @@ extensions_build = cythonize([
 
 
 setup(
-        name="pyHeat2D",   # Package name 
+        name="pyh2d",   # Package name 
         version="0.0.1a",  # current_version
         ext_modules=extensions_build,
         author="Elhadj Mama Gaye",
